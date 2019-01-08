@@ -153,6 +153,7 @@ input.submit
 	&.title-products
 		&:before
 			content: 'Products'
+			right: 0
 	&.title-contacts
 		&:before
 			content: 'Contact Us'
@@ -209,7 +210,51 @@ input.submit
 				.what-block:first-child
 					padding-right: 0px
 
-
+.products
+	&-btn
+		text-align: center
+		margin-top: 20px
+		.btn
+			background-color: $active-btn
+			text-transform: uppercase
+			border-color: $active-btn
+			&:hover
+				background-color: transparent
+				color: $active-btn
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&-block
+		width: 30%
+	&-img
+		border: 2px solid #ebebeb
+		padding: 30px
+		box-sizing: border-box
+		border-radius: 5px
+		height: 360px
+		display: flex
+		align-items: center
+		justify-content: center
+		img
+			max-width: 100%
+	&-coast
+		text-align: center
+		p
+			color: #909090
+			font-size: 52px
+			font-family: $openSans-font
+			&.sale
+				font-size: 52px
+				span
+					color: $main-color
+					font-size: 36px
+					text-decoration: line-through
+	&-about
+		text-align: center
+		p
+			color: #bcbcbc
+			font-size: 24px
+			line-height: 1.16
 
 .contacts-form
 	display: flex
