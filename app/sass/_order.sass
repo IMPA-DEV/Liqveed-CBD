@@ -1,0 +1,124 @@
+.order-wrap
+    display: flex
+    justify-content: space-between
+    .order-product
+        &-wrap
+          padding-right: 20px
+        &-select
+          padding-bottom: 20px
+        &-block
+          display: flex
+          min-height: 316px
+          border-radius: 10px
+          overflow: hidden
+          box-shadow: 0px 5px 25px rgba(0,0,0, 0.3)
+          margin-bottom: 35px
+        &-info
+          padding: 25px 30px
+          width: 380px
+          box-sizing: border-box
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          .order-cost
+            p
+              color: #bcbcbc
+              font-size: 24px
+              font-family: $openSans-font
+          .order-count
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            .count-block
+              display: flex
+              border: 1px solid $main-color
+              border-radius: 5px
+              overflow: hidden
+              input
+                width: 64px
+                padding: 7px 9px
+                box-sizing: border-box
+                border: none
+                text-align: center
+              button
+                background-color: $main-color
+                transition: 0.3s
+                color: #ffffff
+                border: none
+                width: 30px
+                font-size: 20px
+                cursor: pointer
+                &:hover
+                  background-color: $active-btn
+                  transition: 0.3s
+            .cena
+              color: #bcbcbc
+              font-size: 52px
+              line-height: 1
+          .order-name
+            p
+              color: #909090
+              font-size: 24px
+              line-height: 1.16
+        &-img
+          background-color: #f9f9f9
+          display: flex
+          align-items: center
+          justify-content: center
+          padding: 20px
+          img
+            max-width: 100%
+            height: auto
+            display: block
+
+        &-summary
+          max-width: 460px
+          width: 100%
+          .summery-list
+            li
+              line-height: 1.2
+              margin-bottom: 10px
+              padding: 4px 0
+          .order-summery-wrap
+            color: #bcbcbc
+            font-size: 16px
+          .order-summery-h3
+            color: #bcbcbc
+            font-size: 24px
+            font-weight: bold
+            border-bottom: 1px solid #e3e3e3
+          .summery-wrap-block
+            display: flex
+            justify-content: space-between
+            border-bottom: 1px solid #e3e3e3
+            padding: 5px 0
+            p + *
+              width: 230px
+              text-align: right
+            &.total
+              font-size: 18px
+              font-weight: bold
+
+.main-form-block p
+    color: #999999
+.main-form-block .payment-form__address
+  display: none
+.order-form
+  align-items: center !important
+  h4
+    color: #999
+    font-size: 24px
+    text-align: center
+    text-transform: uppercase
+    padding: 10px 0 5px
+  .input-wrap
+    width: 100%
+    input
+      width: 100%
+    select
+      width: 48%
+      color: #999
+    .state-wrap
+      width: 100%
+      display: flex
+      justify-content: space-between
