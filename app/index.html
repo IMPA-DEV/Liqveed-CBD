@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -43,7 +44,13 @@
 
 				<!--Nav-->
 				<div class="top-line-nav">
-					<nav>
+					<div class="header-mob">
+						<div class="ico-m"></div>
+						<div class="ico-m"></div>
+						<div class="ico-m"></div>
+					</div>
+					<nav class="header-nav">
+						<div class="close close-nav"></div>
 						<ul class="scroll-to">
 							<li><a href="#home">Home</a></li>
 							<li><a href="#what">What is CBD</a></li>
@@ -92,7 +99,7 @@
 				</div>
 
 				<!--Form-->
-				<div class="main-form-wrap">
+				<div id="main-form" class="main-form-wrap">
 
 					<div class="main-form">
 						<div class="main-form-text">
@@ -103,7 +110,7 @@
 						</div>
 
 						<div class="main-form-block">
-							<form>
+							<form id="home-form">
 								<div class="input-wrap">
 									<label>*First Name</label>
 									<input name="Value1" type="text" placeholder="First Name" required="">
@@ -127,7 +134,7 @@
 								<div class="input-wrap">
 									<label>*State</label>
 									<div class="state-wrap">
-										<select name="state">
+										<select name="Value9">
 											<option selected="selected" disabled="disabled">Your State</option>
 											<option value="AL">Alabama (AL)</option>
 											<option value="AK">Alaska (AK)</option>
@@ -208,7 +215,7 @@
 									<label>*Email</label>
 									<input name="Value7" type="email" placeholder="email@gmail.com" required="">
 								</div>
-								<input class="main-submit-btn btn" type="submit" value="RUSH MY ORDER!">
+								<input id="button-form" class="main-submit-btn btn" type="submit" value="RUSH MY ORDER!">
 							</form>
 							<div class="main-form-img">
 								<img src="img/mc-afee-secure.png" alt="">
@@ -301,8 +308,8 @@
 								<p>20mg CBD</p>
 							</div>
 						</div>
-						<div class="products-btn">
-							<a class="btn" href="#">Shop now</a>
+						<div class="products-btn scroll-to">
+							<a class="btn" href="#main-form">Shop now</a>
 						</div>
 					</div>
 					<div class="products-block">
@@ -317,8 +324,8 @@
 								<p>50mg CBD</p>
 							</div>
 						</div>
-						<div class="products-btn">
-							<a class="btn" href="#">Shop now</a>
+						<div class="products-btn scroll-to">
+							<a class="btn" href="#main-form">Shop now</a>
 						</div>
 					</div>
 					<div class="products-block">
@@ -333,8 +340,8 @@
 								<p>20mg & 50mg CBD</p>
 							</div>
 						</div>
-						<div class="products-btn">
-							<a class="btn" href="#">Shop now</a>
+						<div class="products-btn scroll-to">
+							<a class="btn" href="#main-form">Shop now</a>
 						</div>
 					</div>
 
@@ -355,8 +362,8 @@
 					<p class="text-2">Limited Time Offer - Get Special discounted price On Select Packages</p>
 				</div>
 
-				<div class="order-btn">
-					<a class="btn" href="#">RUSH MY ORDER!</a>
+				<div class="order-btn scroll-to">
+					<a class="btn" href="#main-form">RUSH MY ORDER!</a>
 				</div>
 			</div>
 
@@ -483,8 +490,8 @@
 						</ul>
 					</div>
 					<!--BTN-->
-					<div class="rush-btn">
-						<a class="btn" href="#">RUSH MY ORDER!</a>
+					<div class="rush-btn scroll-to">
+						<a class="btn" href="#main-form">RUSH MY ORDER!</a>
 					</div>
 				</div>
 			</div>

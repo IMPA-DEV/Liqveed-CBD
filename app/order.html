@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.min.css">
 
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -43,7 +44,13 @@
 
             <!--Nav-->
             <div class="top-line-nav">
-                <nav>
+                <div class="header-mob">
+                    <div class="ico-m"></div>
+                    <div class="ico-m"></div>
+                    <div class="ico-m"></div>
+                </div>
+                <nav class="header-nav">
+                    <div class="close close-nav"></div>
                     <ul class="scroll-to">
                         <li><a href="index.html#home">Home</a></li>
                         <li><a href="index.html#what">What is CBD</a></li>
@@ -93,9 +100,9 @@
 
                                         <div class="order-count">
                                             <div class="count-block">
-                                                <input type="number" value="0">
+                                                <input class="count-number" id="count-3" type="number" min="0" step="1" pattern="[0-9]" placeholder="0">
                                             </div>
-                                            <p class="cena" id="cena-3">$<span>148</span></p>
+                                            <p class="cena">$<span id="cena-3">0</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -115,9 +122,9 @@
 
                                         <div class="order-count">
                                             <div class="count-block">
-                                                <input type="number" value="0">
+                                                <input class="count-number" id="count-2" type="number" min="0" step="1" pattern="[0-9]" placeholder="0">
                                             </div>
-                                            <p class="cena" id="cena-2">$<span>99</span></p>
+                                            <p class="cena">$<span id="cena-2">0</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -137,9 +144,9 @@
 
                                         <div class="order-count">
                                             <div class="count-block">
-                                                <input type="number" value="0">
+                                                <input class="count-number" id="count-1" type="number" min="0" step="1" pattern="[0-9]" placeholder="0">
                                             </div>
-                                            <p class="cena" id="cena-1">$<span>99</span></p>
+                                            <p class="cena">$<span id="cena-1">0</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -165,7 +172,7 @@
                                 </div>
                                 <div class="summery-wrap-block total">
                                     <p>Total:</p>
-                                    <p>$ <span id="summery-total">148</span></p>
+                                    <p>$ <span id="summery-total">0</span></p>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +218,7 @@
                                         <div class="input-wrap">
                                             <label>*State</label>
                                             <div class="state-wrap">
-                                                <select name="state">
+                                                <select name="Value9">
                                                     <option selected="selected" disabled="disabled">Your State</option>
                                                     <option value="AL">Alabama (AL)</option>
                                                     <option value="AK">Alaska (AK)</option>
